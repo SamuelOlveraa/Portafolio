@@ -5,13 +5,12 @@ require('dotenv').config();
 
 const app = express();
 
-// Middleware
 app.use(express.json());
 
-// Servir frontend desde 'dist'
-app.use(express.static(path.join(__dirname, 'dist')));
+// Servir el frontend desde dist en la raíz del proyecto
+app.use(express.static(path.join(__dirname, '..', '..', 'dist')));
 
-// Ruta POST para enviar correo
+// Ruta de envío de correo
 app.post('/send', async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -42,13 +41,13 @@ app.post('/send', async (req, res) => {
   }
 });
 
-// Redirigir cualquier otra ruta al index.html (SPA)
+// Redirigir cualquier otra ruta al frontend
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', '..', 'dist', 'index.html'));
 });
 
 // Puerto dinámico para Render
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log(` Servidor funcionando en puerto ${PORT}`);
+  console.log(`🚀 Servidor funcionando en puerto ${PORT}`);
 });
