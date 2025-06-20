@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
     }
 
     try {
-      const response = await fetch('https://portafolio-nk5h.onrender.com/send', {
+      const response = await fetch('https://portafolio-nk5h.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
