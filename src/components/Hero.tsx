@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
       >
         <div className="relative w-60 h-60 md:w-52 md:h-52 rounded-full overflow-hidden shadow-lg border-4 border-neonBlue/80 bg-gradient-to-tr from-neonBlue/30 via-neonPurple/20 to-neonGreen/20 animate-pulse">
         <img
-          src="/public/Samuel.jpg"
+          src="/Samuel.jpg"
           alt="Samuel Olvera"
           className="w-full h-full object-cover rounded-full"
         />
