@@ -31,8 +31,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/docs/Samuel_Olvera.pdf';
-    link.download = 'CV-Desarrollador-FullStack.pdf';
+    link.href = `${import.meta.env.BASE_URL}Samuel_Olvera.pdf`;
+    link.download = 'CV-Samuel-Olvera.pdf';
     link.click();
   };
 
