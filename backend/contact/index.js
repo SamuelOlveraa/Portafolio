@@ -5,10 +5,11 @@ require('dotenv').config();
 
 const app = express();
 
+// Middleware para parsear JSON
 app.use(express.json());
 
-// Servir el frontend desde dist en la raíz del proyecto
-app.use(express.static(path.join(__dirname, '..', '..', 'dist')));
+// Servir el frontend desde 'dist' (debe estar dentro de esta carpeta)
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Ruta de envío de correo
 app.post('/send', async (req, res) => {
@@ -33,7 +34,7 @@ app.post('/send', async (req, res) => {
 
     res.status(200).json({ message: 'Correo enviado con éxito' });
   } catch (error) {
-    console.error(' Error al enviar el correo:', error);
+    console.error('❌ Error al enviar el correo:', error);
     res.status(500).json({
       error: 'Error al enviar el correo',
       message: error.message
@@ -41,12 +42,12 @@ app.post('/send', async (req, res) => {
   }
 });
 
-// Redirigir cualquier otra ruta al frontend
+// Redirigir cualquier otra ruta al frontend (SPA)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', '..', 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// Puerto dinámico para Render
+// Puerto dinámico (para Render u otros hosts)
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor funcionando en puerto ${PORT}`);
