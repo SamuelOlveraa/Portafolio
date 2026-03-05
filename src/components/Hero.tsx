@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, GraduationCap, Code } from 'lucide-react';
 import Hyperspeed from '../Backgrounds/Hyperspeed';
 
 
@@ -60,12 +60,12 @@ const Hero: React.FC = () => {
           </span>
         </h1>
         <h2
-        className={`flex items-center justify-center gap-2 text-xl md:text-2xl font-light mb-6 text-neonBlue transition-all duration-1000 delay-300 ${
+        className={`flex items-center justify-center gap-2 text-xl md:text-3xl font-light mb-6 text-neonBlue transition-all duration-1000 delay-300 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         } font-futuristic`}
         >
-        <GraduationCap size={28} className="text-neonBlue" />
-        Estudiante de Ingeniería en Ciencias de la Computación.
+        <Code size={40} className="text-neonBlue" />
+        Ingeniero en Ciencias de la Computación.
         </h2>
 
         <div
@@ -118,13 +118,12 @@ const Hero: React.FC = () => {
         </div>
 
         <p
-        className={`text-lg md:text-xl text-secondary max-w-2xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-500 ${
+        className={`text-lg md:text-xl text-secondary max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-500 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
         >
-        Apasionado por la creación de soluciones tecnológicas modernas y eficientes, combinando desarrollo web, móvil, bases de datos y diseño UX/UI para impactar positivamente en el mundo real.
+       Ingeniero Jr. dedicado a la creación de software robusto y escalable. Con una base sólida en el desarrollo móvil y web, mi objetivo es optimizar la experiencia del usuario mediante código limpio y soluciones arquitectónicas eficientes.
         </p>
-
         <div
         className={`flex justify-center space-x-6 mb-12 transition-all duration-1000 delay-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'

@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = `${import.meta.env.BASE_URL}Samuel_Olvera.pdf`;
+    link.href = `${import.meta.env.BASE_URL}Samuel_Olvera_CV.pdf`;
     link.download = 'CV-Samuel-Olvera.pdf';
     link.click();
   };

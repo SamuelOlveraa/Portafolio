@@ -40,28 +40,28 @@ const Skills: React.FC = () => {
     {
       title: 'Desarrollo Móvil',
       icon: Smartphone,
-      skills: ['Flutter', 'Dart', 'React'],
+      skills: ['Flutter', 'Dart', 'React','BLoC/Cubit', 'Freezed',],
       color: 'from-neonGreen to-neonGreen',
       shadow: 'shadow-neon-green'
     },
     {
       title: 'Bases de Datos',
       icon: Database,
-      skills: ['MySQL', 'SQLite'],
+      skills: ['MySQL', 'SQLite', 'PostgreSQL'],
       color: 'from-neonPurple to-neonPurple',
       shadow: 'shadow-neon-purple'
     },
     {
       title: 'Análisis de Datos',
       icon: BarChart2,
-      skills: ['Python', 'Pandas', 'NumPy', 'Excel'],
+      skills: ['Python', 'Pandas', 'NumPy','NLP','NLTK', 'Excel'],
       color: 'from-neonOrange to-neonOrange',
       shadow: 'shadow-neon-orange'
     },
     {
-      title: 'Git Básico',
+      title: 'Control de Versiones',
       icon: GitBranch,
-      skills: ['Git', 'GitHub'],
+      skills: ['Git', 'GitHub', 'GitLab'],
       color: 'from-highlight to-highlight',
       shadow: 'shadow-neon-highlight'
     }

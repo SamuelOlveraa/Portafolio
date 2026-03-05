@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Stethoscope as Hospital, Car, Truck, BarChart3 } from 'lucide-react';
+import { Stethoscope as Hospital, Car, Truck, BarChart3, ShieldCheck } from 'lucide-react';
 import Hyperspeed from '../Backgrounds/Hyperspeed';
 
 const Projects: React.FC = () => {
@@ -65,8 +65,21 @@ const Projects: React.FC = () => {
       technologies: ['Python', 'Pandas', 'NLTK'],
       image: 'https://img.innovaciondigital360.com/wp-content/uploads/2024/10/24224351/sistema-de-gestion-de-datos-con-concepto-de-business-analytics.jpg',
       bg: 'from-neonOrange/80 to-neonOrange/80',
-      shadow: 'shadow-accent', // Usamos una existente ya que no definiste 'shadow-neon-orange'
-    }
+      shadow: 'shadow-neon-orange', 
+    },
+    {
+  
+  id: 5,
+  title: 'Mantenimiento y Soporte de Apps Móviles (SmartKode|Agosto 2025 - Febrero 2026)',
+  description: 'Mantenimiento preventivo e incorporación de nuevas funcionalidades para una aplicación líder en el sector asegurador.',
+  longDescription: 'Responsable del mntenimiento preventivo y correctivo de aplicaciones móviles para el sector asegurador. Mi labor incluyó la resolución de incidencias técnicas y la implementación de mejoras funcionales basadas en requerimientos del cliente, asegurando un sistema robusto y escalable.',
+  icon:Car, 
+  technologies: ['Flutter', 'Dart','BLoC/Cubit','Freezed','Git'],
+  image: 'https://miituo.com/blog/wp-content/uploads/2023/04/seguro-de-auto-obligatorio.webp',
+  bg: 'from-neonPink/80 to-neonPink/80',
+  shadow: 'shadow-neon-pink',
+  },
+
   ];
 
   return (

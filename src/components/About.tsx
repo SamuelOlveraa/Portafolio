@@ -86,9 +86,7 @@ const About: React.FC = () => {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-white to-neonPurple mx-auto mb-8 rounded-full shadow-neon-blue"></div>
           <p className="text-lg text-secondary max-w-3xl mx-auto leading-relaxed font-sans">
-            Soy estudiante de noveno semestre de Ingeniería en Ciencias de la Computación en la Benemérita Universidad Autónoma de Puebla, con orientación al desarrollo de soluciones tecnológicas.<br />
-            Tengo experiencia en programación web, desarrollo móvil y análisis de datos, aplicada en sitios web, aplicaciones móviles y proyectos académicos.
-            Me adapto con facilidad, aprendo rápidamente, trabajo en equipo y aporto creatividad y responsabilidad.
+            Me apasiona construir tecnología que sea tanto funcional como estética. Mi experiencia en entornos de desarrollo profesional, me ha permitido cultivar la disciplina técnica necesaria para gestionar proyectos y colaborar en equipos dinámicos. Aporto una mentalidad de aprendizaje continuo y un alto sentido de responsabilidad, asegurando que cada entrega cumpla con estándares de estabilidad y eficiencia."
           </p>
         </div>
 

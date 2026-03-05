@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       label: 'Ubicación',
-      value: 'Puebla, México',
+      value: 'Tlaxcala, México',
       href: 'https://maps.google.com'
     }
   ];
@@ -93,9 +93,9 @@ const Contact: React.FC = () => {
             Contacto
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-white to-neonPurple mx-auto mb-8 rounded-full shadow-neon-blue"></div>
-          <p className="text-lg text-secondary max-w-3xl mx-auto leading-relaxed font-sans">
-            ¿Tienes un proyecto en mente? Me encantaría colaborar contigo.<br />
-            Hablemos sobre cómo puedo ayudarte a crear algo increíble.
+          <p className="text-lg text-secondary max-w-1xl mx-auto leading-relaxed font-sans">
+           ¿Colaboramos? Hagamos algo increíble juntos.<br />
+           Estoy disponible para nuevos retos y proyectos. Contáctame y platiquemos sobre cómo llevar tu tecnología al siguiente nivel.
           </p>
         </div>
 

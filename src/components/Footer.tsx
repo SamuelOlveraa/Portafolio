@@ -11,9 +11,6 @@ const Footer: React.FC = () => {
             <h2 className="text-2xl font-bold font-futuristic text-neonBlue drop-shadow-neon-blue mb-1">
               Samuel Olvera
             </h2>
-            <p className="text-sm text-secondary font-sans">
-              Full-Stack Developer & Data Scientist
-            </p>
           </div>
 
           {/* Firma con íconos */}
@@ -26,11 +23,6 @@ const Footer: React.FC = () => {
               por <span className="text-neonBlue font-bold">Samuel Olvera</span> © {new Date().getFullYear()}
             </span>
           </div>
-        </div>
-
-        {/* Línea inferior */}
-        <div className="mt-8 pt-6 border-t border-secondary text-center text-xs text-secondary font-sans">
-          <p>© Todos los derechos reservados. Este sitio fue diseñado con pasión, precisión y un toque de neón ⚡</p>
         </div>
       </div>
     </footer>
